@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 3rem 9rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.heder-logo-ending {
+  color: white;
+  background: #ff3d00;
+}
+
+.header-fox-sorts {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.header-sorts-button {
+  width: 155px;
+  height: 54px;
+  padding: 10px;
+  border: 1px solid #ff3d00;
+  border-radius: 7px;
+  margin: 8px;
+  background: white;
+  color: #ff3d00;
+  font-weight: 400;
+  font-size: 24px;
+  transition: background-color, color 0.5s;
+  white-space: nowrap;
+}
+
+.header-sorts-button:hover {
+  font-weight: 600;
+  color: white;
+  background: #ff3d00;
+}
+
+main {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, minmax(470px, 850px));
+  grid-template-rows: repeat(4, 25%);
+  grid-gap: 2rem 4rem;
+  margin: 3rem 0;
+}
+
+.main-fox-card {
+  display: flex;
+}
+
+img {
+  width: 237px;
+  height: 160px;
+}
+
+.main-fox-card-text-block {
+  margin-left: 10px;
+}
+
+h2 {
+  margin: 10px 0;
+  font-weight: 600;
+  font-size: 23px;
+}
+
+.main-fox-card-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.number-with-heart {
+  display: flex;
+}
+
+.heart {
+  width: 10px;
+  height: 10px;
+  margin-top: 17px;
+  margin-right: 5px;
+}
+
+.main-card-number {
+  font-weight: 600;
+  font-size: 14px;
+  color: #ff3d00;
+}
+
+.read-more {
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ff3d00;
+  text-decoration: none;
+}
+
+@media (max-width: 375px) {
+  body {
+    padding: 20px;
+  }
+
+  .header-fox-sorts {
+    flex-wrap: wrap;
+    width: 315px;
+  }
+
+  .header-sorts-button {
+    margin: 4px;
+  }
+
+  .arctic-fox {
+    width: 142px;
+  }
+
+  .kit-fox {
+    width: 113px;
+  }
+
+  .red-fox {
+    width: 184px;
+  }
+
+  .pet-fox {
+    width: 100%;
+  }
+
+  main {
+    display: block;
+    margin: 0;
+  }
+
+  .main-fox-card {
+    display: block;
+    margin-top: 2rem;
+  }
+
+  img {
+    width: 332px;
+    height: 159px;
+  }
+}
